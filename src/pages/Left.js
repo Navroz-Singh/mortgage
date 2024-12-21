@@ -97,7 +97,7 @@ const Left = () => {
                     <label className='text-slate_700 text-sm font-medium' htmlFor="mort_amount">Mortgage Amount</label>
                     <div className='relative'>
                         <span className={`z-10 absolute bottom-0 font-semibold rounded-md text-slate_700 px-4 py-[6px] ${isfocused('mort_amount') ? "bg-Lime" : "bg-slate_500"} bg-opacity-20`}>£</span>
-                        <input name='mort_amount' value={form.mort_amount} onChange={(e)=>handleForm(e)} className='outline-Lime border-[2px] h-9 border-slate_300 rounded-[4px] p-2 pl-11' type='number' />
+                        <input name='mort_amount' value={form.mort_amount} onChange={(e)=>handleForm(e)} className='outline-Lime border-[2px] h-9 border-slate_300 rounded-[4px] w-full p-2 pl-11' type='number' />
                     </div>
                     {errors.mort_amount && <span className='text-xs text-Red'>This field is required</span>}
                 </div>
